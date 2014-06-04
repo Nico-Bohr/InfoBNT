@@ -12,10 +12,10 @@ package gy12;
  */
 public class Fibonacci {
   static int fib(int x){
-    return x==0?1 :(x-1)+(x-2);
+    return x<=1?x :fib(x-1)+ fib(x-2);
     
  }
  public static void main(String[] args){
-    System.out.println("fib(4) = "+fib(4));
+    System.out.println("fib(5) = "+fib(7));
     }  
 }
