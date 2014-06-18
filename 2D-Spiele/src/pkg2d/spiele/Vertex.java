@@ -52,4 +52,23 @@ public class Vertex {
     y=s*y;
     
     }
+    
+    public Vertex add(Vertex v2) {
+        return new Vertex (x + v2.x, y + v2.y);
+    }
+    
+    public void addMod(Vertex v2) {
+        x = x + v2.x;
+        y = y + v2.y;
+        
+    }
+    
+    public void setX(double x){
+        this.x= x;
+    }
+    public void setY(double y){
+        this.y= y;
+    }
+    public double getX(){return x;}
+    public double getY(){return y;}
 }
