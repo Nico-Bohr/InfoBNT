@@ -8,9 +8,6 @@ public class Burger {
     private boolean kaese;  
     private String soße;
     
-   
-
-    
   public Burger (String name, double preis, boolean kaese, String soße) {
         setName(name);
         setPreis(preis);
@@ -27,7 +24,6 @@ public class Burger {
   public void setSoße(String soße) {if( soße != null)
       this.soße = soße;}
   
-  
    public String getName() {return name;}
    public double getPreis() {return preis;}
    public boolean getKaese() {return kaese;}
@@ -36,9 +32,7 @@ public class Burger {
    @Override
    public String toString (){
        return " Name: " +getName() + " | Preis: " +getPreis() + "€" + " | Käse: " +getKaese() + " | Soße: " +getSoße();
-   }
-   
-   
+   } 
 }
 
 
